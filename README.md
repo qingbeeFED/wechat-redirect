@@ -4,13 +4,19 @@
  这么个小功能收费？！不可能（qiong~...）。
  搜索引擎翻了大概几十页结果都没具体方案，大概满足需求的情况下，最后把代码推上来，方便交流取阅🙌。
 
-**[点击查看demo](http://wxredirect.jslab.fun)👈**
+
+🌰**新增微信浏览器唤起APP例子**
+微信预览:[http://wxredirect.jslab.fun/call-app](http://wxredirect.jslab.fun/call-app)
+
+🌰**[查看完整demo](http://wxredirect.jslab.fun)**
 
 
-<img src="https://raw.githubusercontent.com/EthanOrange/wechat-redirect/master/example/front/public/resource/demo_mobile.png"  style="max-width: 200px;" />
+<img src="./example/front/public/resource/demo_mobile_1.png"  style="max-width: 200px;" />
 
 
-**note:** 此站点只供demo演示，请勿将demo生成的url带入真正业务链中
+ - ⚠️ 此站点只供demo演示，请勿将demo生成的url带入真正业务链中
+ - 🛠你现在可以[快速部署demo站点到自己的服务器](./DEPLOY.md)
+
 
 # 🎨 应用场景
 
@@ -40,7 +46,7 @@ res.statusCode = 206
 docker用户:
 ```bash
 npm run docker
-# http://localhost:3005 dev地址
+# http://localhost:3000 dev地址
 ```
 非docker用户:
  - redis
@@ -72,8 +78,7 @@ npm run build
 # 📖TODO
 下面功能查询了相关资料，都没有找到满意都答案，大都是通过hack ticket进行伪装，如果你有好的实现或想法，欢迎交流～
   - [ ] app直接打开wechat浏览器
-  - [ ] wechat浏览器直接打开app
-  - [ ] 用户浏览器直接打开wechat or app
+  - [x] wechat浏览器直接打开app（跳出wx，之后再通过本地浏览器进行app唤起，依赖[callapp-lib](https://github.com/suanmei/callapp-lib)实现）
 
 
 UI方面
