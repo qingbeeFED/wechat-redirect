@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
 | author: Ethan
 | source: https://github.com/EthanOrange/wechat-redirect

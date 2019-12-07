@@ -2,7 +2,7 @@ const config = {
     apps: [
         {
             name: 'WEIXIN.IMCOCO_8996',
-            script: './www', // 实际启动脚本
+            script: './index.js', // 实际启动脚本
             cwd: './', // "当前工作路径"
             node_args: '--harmony', // node运行模式
             max_memory_restart: '50M',
